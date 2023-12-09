@@ -45,7 +45,7 @@ local dark = {
     comment               = hsl("#68789c"),
     punctuation           = hsl("#7A82DA"),
     method                = hsl("#3FC58B"),
-    type                  = hsl("#8af7ff"),
+    type                  = hsl("#af70e6"),
     string                = hsl("#F9C859"),
     number                = hsl("#FF78F8"),
     constant              = hsl("#9F7EFE"),
@@ -234,6 +234,7 @@ local theme = lush(function(injected_functions)
     local sym = injected_functions.sym
 
     return {
+        LeapBackdrop { fg = hsl("#b6acb9") },
         Normal { fg = t.fg, bg = t.bg }, -- normal text
         CursorLine { bg = t.grey7 },     -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
         CursorColumn { CursorLine },     -- Screen-column at the cursor, when 'cursorcolumn' is set.
